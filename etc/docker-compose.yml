@@ -1,0 +1,8 @@
+version: '2'
+services:
+  web:
+    image: node:4-onbuild
+    ports:
+    - "8888:8888"
+    volumes:
+      - ./../node:/usr/src/app
